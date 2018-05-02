@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* main */
+
+body {
+    background: white;
+    color: rgb(2, 0, 36);
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.grid {
+    background: linear-gradient(90deg, #e3ffe7, #d9e7ff);
+    padding-bottom: 30px;
+}
+
+.primery-flex {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.col-1-5 {
+    display: block;
+    width: 20%;
+}
+
+/* typography*/
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 0.5px solid rgb(2, 0, 36);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(2, 0, 36);
+}
+
+a:hover {
+    color: lightgray;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    padding: 5px 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.primery-nav {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav li:last-child {
+    padding-right: 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* footer */
+
+footer {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-top: 1px gray;
+}
+
+.footer-nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+footer small {
+    color: whitesmoke;
+}
+
+/* members section */
+
+.title {
+    padding: 50px 30px 0 30px;
+    text-align: center;
+}
+
+.member table {
+    display: block;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.member a {
+    color: rgb(3, 0, 70);
+}
+
+.member table a {
+    font-weight: 400;
+}
+
+.member a:hover {
+    color: rgb(46, 46, 136);
+    border-bottom-color: rgb(46, 46, 136);
+}
+
+.hover-img {
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.hover-img:hover {
+    background-color: rgb(214, 235, 255);
+}
+
+.member img {
+    display: block;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 155px;
+}
+
+.member h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.member tr td:first-child {
+    padding-right: 15px;
+}
+
+.member td {
+    font-size: 11px;
+    border-bottom: 0.5px solid rgb(2, 0, 36);
+    padding-top: 10px;
+    width: 50%;
+}
