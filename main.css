@@ -88,7 +88,6 @@ h1 {
 
 h2 {
     font-size: 20px;
-    border-bottom: 0.5px solid rgb(2, 0, 36);
 }
 
 a {
@@ -97,7 +96,7 @@ a {
 }
 
 a:hover {
-    color: lightgray;
+    color: gray;
 }
 
 /* header */
@@ -255,7 +254,7 @@ footer small {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 415px) {
     .primery-flex {
         flex-flow: column;
     }
