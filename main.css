@@ -212,7 +212,7 @@ footer small {
 
 /* responsiv */
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .primery-flex {
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -224,7 +224,7 @@ footer small {
         width: 50%;
     }
     .member img {
-        max-height: 200px;
+        max-height: 300px;
     }
     .member {
         padding-bottom: 30px;
@@ -240,6 +240,12 @@ footer small {
     }
     nav li:last-child {
         padding-right: 0;
+    }
+    .member td {
+        font-size: 15px;
+    }
+    .member tr td:first-child {
+        padding-right: 20px;
     }
     footer {
         flex-flow: column;
@@ -271,13 +277,5 @@ footer small {
     }
     .member img {
         max-height: 300px;
-    }
-    
-    .member td {
-        font-size: 16px;
-    }
-
-    .member tr td:first-child {
-        padding-right: 20px;
     }
 }
