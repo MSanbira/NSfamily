@@ -211,6 +211,16 @@ footer small {
 
 /* responsiv */
 
+@media (min-width: 1400px) {
+    .container {
+        width: 1350px ;
+    }
+    
+    .member img {
+        max-height: 300px;
+    }
+}
+
 @media (max-width: 1000px) {
     .primery-flex {
         flex-flow: row wrap;
