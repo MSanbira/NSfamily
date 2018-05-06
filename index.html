@@ -35,7 +35,7 @@
     </header>
 
     <div class="wrapper">
-        <section class="grid">
+        <section>
             <h1 class="title">The Nahoom Sanbira Family</h1>
             <div class="container primery-flex">
                 <section class="member col-1-5" id="eti">
@@ -178,6 +178,33 @@
                 </section>
             </div>
         </section>
+
+        <section class="primery-tabs container">
+            <div class="tab">
+                <button class="tablinks" onclick="openInfo(event, 'bio')">Bio</button>
+                <button class="tablinks" onclick="openInfo(event, 'pictures')">Pictures</button>
+                <button class="tablinks" onclick="openInfo(event, 'faq')">FAQ</button>
+            </div>
+            <div class="tabcontent" id="bio">
+                <h3>The Nahoom Sanbira story</h3>
+                <p>bla bla bla bla bla bla bla bla bla bla...</p>
+            </div>
+            <div class="tabcontent pic" id="pictures">
+                <h3>Pictures of The Nahoom Sanbira family</h3>
+                <img src="assets/pic/pic1.jpg" alt="hadas and eti">
+                <img src="assets/pic/pic2.jpg" alt="matan and alona">
+                <img src="assets/pic/pic3.jpg" alt="hadas and neta">
+                <img src="assets/pic/pic4.jpg" alt="alona">
+                <img src="assets/pic/pic5.jpg" alt="arkadi">
+                <img src="assets/pic/pic6.jpg" alt="egg pizza">
+            </div>
+            <div class="tabcontent" id="faq">
+                <h3>FAQ</h3>
+                <p>Question
+                    <br>Answer</p>
+            </div>
+        </section>
+
     </div>
 
     <footer class="primery-footer">
@@ -198,6 +225,22 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        function openInfo(evt, infoType) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoType).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 
 </body>
 

@@ -61,7 +61,6 @@ body {
 
 .wrapper {
     margin-top: 70px;
-    margin-bottom: -65px;
     min-height: 100%;
 }
 
@@ -69,10 +68,6 @@ body {
     width: 1000px;
     padding: 30px;
     margin: 0 auto;
-}
-
-.grid {
-    padding-bottom: 30px;
 }
 
 .primery-flex {
@@ -196,6 +191,7 @@ footer small {
 .hover-img {
     border-radius: 5px;
     padding: 15px;
+    transition: 0.3s;
 }
 
 .hover-img:hover {
@@ -225,6 +221,55 @@ footer small {
     padding-top: 10px;
 }
 
+/* tabs */
+
+.pic {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.pic img {
+    border-radius: 5px;
+    width: 150px;
+    height: 100%;
+    margin: 20px;
+}
+.tab button {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #e3ffe7;
+    border: 0.5px solid darkgray;
+    border-bottom: none;
+    border-radius: 5px;
+    margin: 0 15px 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tab button:hover {
+    background-color: rgb(214, 235, 255);
+    color: rgb(46, 46, 136)
+}
+.tabcontent {
+    padding: 15px;
+    border: 0.5px solid darkgray;
+    border-radius: 5px;
+    background: linear-gradient(#e3ffe7, #d9e7ff);
+    border-bottom: none;
+    display: none;
+}
+.tabcontent:last-child {
+    display: block;
+}
+.tabcontent h3 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+
 /* responsiv */
 
 @media (min-width: 1400px) {
@@ -243,7 +288,6 @@ footer small {
     }
     .container {
         width: 100%;
-        margin-bottom: 30px;
     }
     .col-1-5 {
         width: 33.33%;
