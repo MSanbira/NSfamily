@@ -87,6 +87,7 @@ body [lang="hb"] {
     font-family: Assistant, Arial, sans-serif;
     text-align: right;
     direction: rtl;
+    margin: 0 0 0 auto;
 }
 
 h1 {
@@ -243,7 +244,7 @@ footer small {
 .tool-tip-text {
     visibility: hidden;
     width: 200%;
-    background-color: darkgray;
+    background-color: rgb(116, 116, 116);
     color: whitesmoke;
     text-align: center;
     border-radius: 5px;
@@ -265,7 +266,7 @@ footer small {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: darkgray transparent transparent transparent;
+    border-color: rgb(116, 116, 116) transparent transparent transparent;
 }
 
 .tool-tip:hover .tool-tip-text {
@@ -295,25 +296,26 @@ footer small {
     display: inline-block;
     font-size: 16px;
     padding: 15px;
-    background-color: #e3ffe7;
+    background-color: white;
     border: 0.5px solid darkgray;
     border-bottom: none;
     border-radius: 5px;
-    margin: 0 15px 15px 0;
+    margin-right: -3px;
+    margin-bottom: -5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .tab button:hover {
-    background-color: rgb(214, 235, 255);
-    color: rgb(46, 46, 136);
+    background-color: darkgrey;
+    color: whitesmoke;
 }
 
 .tabcontent {
     padding: 15px;
     border: 0.5px solid darkgray;
     border-radius: 5px;
-    background: linear-gradient(#e3ffe7, #d9e7ff);
+    background-color: white;
     border-bottom: none;
     display: none;
 }
@@ -332,6 +334,7 @@ footer small {
 
 .tabcontent p {
     text-indent: 15px;
+    max-width: 700px;
 }
 
 /* FAQ */
@@ -351,14 +354,17 @@ footer small {
 }
 
 .accordion:hover {
-    background-color: rgb(214, 235, 255);
-    color: rgb(46, 46, 136);
+    background-color: darkgray;
+    color: whitesmoke;
 }
 
 .panel {
     padding: 15px;
     display: none;
     overflow: hidden;
+    border-bottom: 0.5px solid darkgray;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .panel p {
