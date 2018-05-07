@@ -200,8 +200,20 @@
             </div>
             <div class="tabcontent" id="faq">
                 <h3>FAQ</h3>
-                <p>Question
-                    <br>Answer</p>
+                <button class="accordion">What is the porpose of this website?</button>
+                <div class="panel">
+                    <p>This website was build by Matan Sanbira as a part of his front-end devloper learning.
+                        <br> As it is, the secondery porpose of this site is to include all of my familys info and pictures in
+                        one spot.</p>
+                </div>
+                <button class="accordion">Q2</button>
+                <div class="panel">
+                    <p>Answer2</p>
+                </div>
+                <button class="accordion">Q3</button>
+                <div class="panel">
+                    <p>Answer3</p>
+                </div>
             </div>
         </section>
 
@@ -239,6 +251,21 @@
             }
             document.getElementById(infoType).style.display = "block";
             evt.currentTarget.className += " active";
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
     </script>
 
