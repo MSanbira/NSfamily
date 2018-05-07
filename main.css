@@ -83,6 +83,12 @@ body {
 
 /* typography*/
 
+body [lang="hb"] {
+    font-family: Assistant, Arial, sans-serif;
+    text-align: right;
+    direction: rtl;
+}
+
 h1 {
     font-size: 200%;
     font-weight: 700;
@@ -324,6 +330,10 @@ footer small {
     padding-bottom: 10px;
 }
 
+.tabcontent p {
+    text-indent: 15px;
+}
+
 /* FAQ */
 
 .accordion {
@@ -383,9 +393,6 @@ footer small {
     .member {
         padding-bottom: 30px;
     }
-    .primery-nav {
-        font-size: 14px;
-    }
     nav li {
         padding-right: 10px;
     }
@@ -406,6 +413,9 @@ footer small {
     }
     h1 {
         font-size: 100%;
+    }
+    .primery-nav {
+        font-size: 14px;
     }
 }
 
