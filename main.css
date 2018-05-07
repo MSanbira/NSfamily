@@ -227,6 +227,46 @@ footer small {
     padding-top: 10px;
 }
 
+/* tool tip */
+
+.tool-tip {
+    position: relative;
+    display: inline-block;
+}
+
+.tool-tip-text {
+    visibility: hidden;
+    width: 200%;
+    background-color: darkgray;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 100%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tool-tip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgray transparent transparent transparent;
+}
+
+.tool-tip:hover .tool-tip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* tabs */
 
 .pic {
@@ -235,6 +275,7 @@ footer small {
     align-items: center;
     overflow: auto;
     max-height: 500px;
+    justify-content: space-evenly;
 }
 
 .pic img {
@@ -309,6 +350,7 @@ footer small {
     display: none;
     overflow: hidden;
 }
+
 .panel p {
     text-indent: 15px;
 }
