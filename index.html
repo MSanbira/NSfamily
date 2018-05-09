@@ -187,11 +187,11 @@
 
         <section class="primery-tabs container">
             <div class="tab">
-                <button class="tablinks" onclick="openInfo(event, 'bio')">Bio</button>
-                <button class="tablinks" onclick="openInfo(event, 'pictures')">Pictures</button>
-                <button class="tablinks" onclick="openInfo(event, 'faq')">FAQ</button>
+                <button class="tab-btn" onclick="openTab('bio')">Bio</button>
+                <button class="tab-btn" onclick="openTab('pictures')">Pictures</button>
+                <button class="tab-btn" onclick="openTab('faq')">FAQ</button>
             </div>
-            <div class="tabcontent" id="bio">
+            <div class="tab-content" id="bio">
                 <h3 lang="hb">הסיפור של משפחת נחום סנבירה</h3>
                 <p lang="hb">זה התחיל לפני כמעט שלושים ושש שנה, אתי וראובן נחום סנבירה נישאו אחד לשני. מאז עברו 6 שנים ארוכות שלאחרן אני
                     נולדתי, מתן. מאז נולדה לי אחות בשם נטע, עברנו לבית החדש בגן יבנה, ודולב הגיע גם, אחרי שהתגנב לטיול לפנמה
@@ -201,7 +201,7 @@
                     לאור באופן רשמי את הספר הראשון שלו "פרקי אבי".
                     <br> מה צופה לנו העתיד? נחיה ונראה... </p>
             </div>
-            <div class="tabcontent pic" id="pictures">
+            <div class="tab-content tab-pic" id="pictures">
                 <h3>Pictures of The Nahoom Sanbira family</h3>
                 <img src="assets/pic/pic1.jpg" alt="hadas and eti">
                 <img src="assets/pic/pic2.jpg" alt="matan and alona">
@@ -210,19 +210,19 @@
                 <img src="assets/pic/pic5.jpg" alt="arkadi">
                 <img src="assets/pic/pic6.jpg" alt="egg pizza">
             </div>
-            <div class="tabcontent" id="faq">
+            <div class="tab-content" id="faq">
                 <h3>FAQ</h3>
-                <button class="accordion">What is the porpose of this website?</button>
+                <button class="accordion" onclick="openFaq(0)">What is the porpose of this website?</button>
                 <div class="panel">
                     <p>This website was build by Matan Sanbira as a part of his front-end devloper learning.
                         <br> As it is, the secondery porpose of this site is to include all of my familys info and pictures in
                         one spot.</p>
                 </div>
-                <button class="accordion">Why is the Nahoom Sanbira family so spacial?</button>
+                <button class="accordion" onclick="openFaq(1)">Why is the Nahoom Sanbira family so spacial?</button>
                 <div class="panel">
                     <p>BECAUSE SHE IS!</p>
                 </div>
-                <button class="accordion">Why does your last name contains two words?</button>
+                <button class="accordion" onclick="openFaq(2)">Why does your last name contains two words?</button>
                 <div class="panel">
                     <p>At a time when the family was in Tripoli, it was necessary to separate us from other families bearing
                         the name "Nahoom".
@@ -251,37 +251,6 @@
             </ul>
         </nav>
     </footer>
-
-    <script>
-        function openInfo(evt, infoType) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(infoType).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
 
 </body>
 
